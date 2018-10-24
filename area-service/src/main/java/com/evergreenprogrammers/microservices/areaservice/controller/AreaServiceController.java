@@ -5,7 +5,6 @@ package com.evergreenprogrammers.microservices.areaservice.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -18,7 +17,6 @@ import com.evergreenprogrammers.microservices.areaservice.CircleAreaCalculator;
 import com.evergreenprogrammers.microservices.areaservice.RectangleAreaCalculator;
 import com.evergreenprogrammers.microservices.areaservice.TriangleAreaCalculator;
 import com.evergreenprogrammers.microservices.areaservice.bo.Area;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
  * @author TapojitBhattacharya
@@ -44,23 +42,15 @@ public class AreaServiceController {
 	private double sideB;
 	@Value("${triangle.sidec}")
 	private double sideC;
-	
+
 	private Logger logger = LoggerFactory.getLogger(AreaServiceController.class);
 
 	@GetMapping("/area/shapeType/{shapeType}")
-	@HystrixCommand(fallbackMethod = "getAreaFallBack")
 	public Area getArea(@PathVariable String shapeType) {
 		AreaCalculator areaCalculator = getAreaCalculator(shapeType);
 		double area = areaCalculator.calculateArea();
 		int portNo = getServerPort();
 		logger.info("AreaServiceController.getArea.area---> {}" + area);
-		return new Area(area, portNo);
-	}
-
-	public Area getAreaFallBack(@PathVariable String shapeType) {
-		double area = 0;
-		int portNo = getServerPort();
-		logger.info("AreaServiceController.getAreaFallBack.area---> {}" + area);
 		return new Area(area, portNo);
 	}
 

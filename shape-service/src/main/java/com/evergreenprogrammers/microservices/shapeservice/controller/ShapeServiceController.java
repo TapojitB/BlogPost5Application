@@ -20,7 +20,6 @@ import com.evergreenprogrammers.microservices.shapeservice.bo.Perimeter;
 import com.evergreenprogrammers.microservices.shapeservice.bo.Shape;
 import com.evergreenprogrammers.microservices.shapeservice.proxy.AreaServiceProxy;
 import com.evergreenprogrammers.microservices.shapeservice.proxy.PerimeterServiceProxy;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
  * @author TapojitBhattacharya
@@ -67,18 +66,10 @@ public class ShapeServiceController {
 	}
 
 	@GetMapping("/shapeDetailsFeign/shapeType/{shapeType}")
-	@HystrixCommand(fallbackMethod = "getShapeDetailsFeignFallBack")
 	public Shape getShapeDetailsFeign(@PathVariable String shapeType) {
 		Area area = invokeAreaServiceFeign(shapeType);
 		Perimeter perimeter = invokePerimeterServiceFeign(shapeType);
 		logger.info("ShapeServiceController.getShapeDetailsFeign---> {}");
-		return new Shape(shapeType, area, perimeter);
-	}
-
-	public Shape getShapeDetailsFeignFallBack(@PathVariable String shapeType) {
-		Area area = new Area(0, 0);
-		Perimeter perimeter = new Perimeter(0, 0);
-		logger.info("ShapeServiceController.getShapeDetailsFeignFallBack---> {}");
 		return new Shape(shapeType, area, perimeter);
 	}
 
