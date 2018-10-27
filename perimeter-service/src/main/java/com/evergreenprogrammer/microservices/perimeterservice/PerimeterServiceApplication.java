@@ -1,4 +1,4 @@
-package com.evergreenprogrammers.microservices.perimeterservice;
+package com.evergreenprogrammer.microservices.perimeterservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

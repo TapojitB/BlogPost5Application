@@ -1,4 +1,4 @@
-package com.evergreenprogrammers.microservices.perimeterservice;
+package com.evergreenprogrammer.microservices.perimeterservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

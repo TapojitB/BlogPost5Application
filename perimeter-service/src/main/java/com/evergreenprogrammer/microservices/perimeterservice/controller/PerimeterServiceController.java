@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.evergreenprogrammers.microservices.perimeterservice.controller;
+package com.evergreenprogrammer.microservices.perimeterservice.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.evergreenprogrammers.microservices.perimeterservice.CirclePerimeterCalculator;
-import com.evergreenprogrammers.microservices.perimeterservice.PerimeterCalculator;
-import com.evergreenprogrammers.microservices.perimeterservice.RectanglePerimeterCalculator;
-import com.evergreenprogrammers.microservices.perimeterservice.TrianglePerimeterCalculator;
-import com.evergreenprogrammers.microservices.perimeterservice.bo.Perimeter;
+import com.evergreenprogrammer.microservices.perimeterservice.CirclePerimeterCalculator;
+import com.evergreenprogrammer.microservices.perimeterservice.PerimeterCalculator;
+import com.evergreenprogrammer.microservices.perimeterservice.RectanglePerimeterCalculator;
+import com.evergreenprogrammer.microservices.perimeterservice.TrianglePerimeterCalculator;
+import com.evergreenprogrammer.microservices.perimeterservice.bo.Perimeter;
 
 /**
  * @author TapojitBhattacharya
