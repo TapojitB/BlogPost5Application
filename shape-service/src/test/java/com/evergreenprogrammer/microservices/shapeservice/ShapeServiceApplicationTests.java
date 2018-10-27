@@ -1,4 +1,4 @@
-package com.example.shapeservice;
+package com.evergreenprogrammer.microservices.shapeservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
