@@ -1,4 +1,4 @@
-package com.evergreenprogrammers.microservices.areaservice;
+package com.evergreenprogrammer.microservices.areaservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
