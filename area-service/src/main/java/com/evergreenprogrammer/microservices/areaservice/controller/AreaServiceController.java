@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.evergreenprogrammers.microservices.areaservice.controller;
+package com.evergreenprogrammer.microservices.areaservice.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.evergreenprogrammers.microservices.areaservice.AreaCalculator;
-import com.evergreenprogrammers.microservices.areaservice.CircleAreaCalculator;
-import com.evergreenprogrammers.microservices.areaservice.RectangleAreaCalculator;
-import com.evergreenprogrammers.microservices.areaservice.TriangleAreaCalculator;
-import com.evergreenprogrammers.microservices.areaservice.bo.Area;
+import com.evergreenprogrammer.microservices.areaservice.AreaCalculator;
+import com.evergreenprogrammer.microservices.areaservice.CircleAreaCalculator;
+import com.evergreenprogrammer.microservices.areaservice.RectangleAreaCalculator;
+import com.evergreenprogrammer.microservices.areaservice.TriangleAreaCalculator;
+import com.evergreenprogrammer.microservices.areaservice.bo.Area;
 
 /**
  * @author TapojitBhattacharya
