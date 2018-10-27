@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.evergreenprogrammers.microservices.shapeservice.controller;
+package com.evergreenprogrammer.microservices.shapeservice.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.evergreenprogrammers.microservices.shapeservice.bo.Area;
-import com.evergreenprogrammers.microservices.shapeservice.bo.Perimeter;
-import com.evergreenprogrammers.microservices.shapeservice.bo.Shape;
-import com.evergreenprogrammers.microservices.shapeservice.proxy.AreaServiceProxy;
-import com.evergreenprogrammers.microservices.shapeservice.proxy.PerimeterServiceProxy;
+import com.evergreenprogrammer.microservices.shapeservice.bo.Area;
+import com.evergreenprogrammer.microservices.shapeservice.bo.Perimeter;
+import com.evergreenprogrammer.microservices.shapeservice.bo.Shape;
+import com.evergreenprogrammer.microservices.shapeservice.proxy.AreaServiceProxy;
+import com.evergreenprogrammer.microservices.shapeservice.proxy.PerimeterServiceProxy;
 
 /**
  * @author TapojitBhattacharya

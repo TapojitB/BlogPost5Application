@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.evergreenprogrammers.microservices.shapeservice.proxy;
+package com.evergreenprogrammer.microservices.shapeservice.proxy;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.evergreenprogrammers.microservices.shapeservice.bo.Perimeter;
+import com.evergreenprogrammer.microservices.shapeservice.bo.Perimeter;
 
 /**
  * @author TapojitBhattacharya

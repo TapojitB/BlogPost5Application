@@ -1,4 +1,4 @@
-package com.evergreenprogrammers.microservices.shapeservice;
+package com.evergreenprogrammer.microservices.shapeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
