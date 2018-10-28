@@ -32,7 +32,7 @@ public class PerimeterServiceController {
 
 	@Value("${rectangle.length}")
 	private double length;
-	@Value("${rectangle.bredth}")
+	@Value("${rectangle.breadth}")
 	private double breadth;
 
 	@Value("${triangle.sidea}")
